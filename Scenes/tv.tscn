@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://hoqoul8dw4al"]
+
+[ext_resource type="Script" uid="uid://bxoxb0xlmgjx0" path="res://Assets/Scripts/tv.gd" id="1_emhpc"]
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="2_q80sk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdw0i"]
+size = Vector2(184, 87)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_emhpc"]
+
+[node name="TV" type="Area2D" unique_id=643270065]
+collision_mask = 2
+script = ExtResource("1_emhpc")
+
+[node name="tv_action_label" type="Label" parent="." unique_id=1673192019]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -69.41
+offset_right = 26.0
+offset_bottom = -46.410004
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_q80sk")
+theme_override_font_sizes/font_size = 30
+text = "
+"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=701262446]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_tdw0i")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=615294254]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-3.8146973e-06, 1.4999949)
+scale = Vector2(184, 87)
+texture = SubResource("CanvasTexture_emhpc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

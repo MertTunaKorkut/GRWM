@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cwa17xced2fsc"]
+
+[ext_resource type="Script" uid="uid://cyvcl2u86l5q1" path="res://Assets/Scripts/telephone.gd" id="1_085pt"]
+[ext_resource type="AudioStream" uid="uid://cltbmnxbkhxbn" path="res://Assets/Sounds/tel_ring.wav" id="2_cgqs2"]
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="3_qnroa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88h77"]
+size = Vector2(44, 48)
+
+[node name="Telephone" type="Area2D" unique_id=355435855]
+collision_mask = 2
+script = ExtResource("1_085pt")
+
+[node name="timer_before_ringing" type="Timer" parent="." unique_id=1542896629]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1302307402]
+stream = ExtResource("2_cgqs2")
+bus = &"Phone"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=353629458]
+shape = SubResource("RectangleShape2D_88h77")
+
+[node name="tel_action_label" type="Label" parent="." unique_id=1505111103]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -44.0
+offset_right = -10.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qnroa")
+theme_override_font_sizes/font_size = 30
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="timer_before_ringing" to="." method="_on_timer_before_ringing_timeout"]
