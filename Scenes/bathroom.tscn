@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://x53t3606s23g" path="res://Assets/Scripts/bathroom.gd" id="1_snc4n"]
 [ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="2_snc4n"]
 [ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/door.tscn" id="3_wncak"]
+[ext_resource type="PackedScene" uid="uid://vs5v18fdpuix" path="res://Scenes/mirror.tscn" id="5_objv1"]
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="6_ig7h1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_objv1"]
 texture = ExtResource("1_a8uwc")
@@ -43,3 +45,22 @@ door_scene = "bathroom"
 [node name="spawnpoint" type="Marker2D" parent="." unique_id=1137926931]
 position = Vector2(-873, -4)
 gizmo_extents = 150.6
+
+[node name="mirror" parent="." unique_id=1782733596 instance=ExtResource("5_objv1")]
+position = Vector2(-733, -162)
+
+[node name="mirror_action_label" type="Label" parent="mirror" unique_id=459258071]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -82.0
+offset_right = 24.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_ig7h1")
+theme_override_font_sizes/font_size = 30
