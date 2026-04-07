@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d2b4b1y20b0ut"]
 
 [ext_resource type="Texture2D" uid="uid://dt64b4qehygp4" path="res://Assets/Sprites/Cat-2 scale-up/Cat-2-Idle.png" id="1_jddfi"]
+[ext_resource type="Script" uid="uid://cwnm0nrwej0ep" path="res://Assets/Scripts/cat.gd" id="1_tsblf"]
 [ext_resource type="Texture2D" uid="uid://ds36j0gim2ovc" path="res://Assets/Sprites/Cat-2 scale-up/Cat-2-Itch.png" id="2_tsblf"]
 [ext_resource type="Texture2D" uid="uid://ja13tbsmcbqm" path="res://Assets/Sprites/Cat-2 scale-up/Cat-2-Laying.png" id="3_5tnve"]
 [ext_resource type="Texture2D" uid="uid://cdu23yin0syop" path="res://Assets/Sprites/Cat-2 scale-up/Cat-2-Licking 1.png" id="4_gg0x1"]
@@ -542,6 +543,7 @@ animations = [{
 }]
 
 [node name="Cat" type="Area2D" unique_id=239263429]
+script = ExtResource("1_tsblf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1599014588]
 position = Vector2(0.5, -0.5)
@@ -550,5 +552,4 @@ shape = SubResource("RectangleShape2D_hj4mb")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1183952441]
 position = Vector2(0, 3)
 sprite_frames = SubResource("SpriteFrames_852xx")
-animation = &"licking_2"
-autoplay = "licking_2"
+animation = &"itch"

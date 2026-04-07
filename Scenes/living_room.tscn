@@ -1804,7 +1804,7 @@ layer_0/tile_data = PackedInt32Array(-196608, 5, 0)
 layer_1/name = "furniture"
 
 [node name="Player" parent="." unique_id=1143661213 instance=ExtResource("18_6khbn")]
-position = Vector2(-1249, -9.14)
+position = Vector2(633, -14)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=184731922]
 position = Vector2(2, 10)
@@ -1813,7 +1813,7 @@ limit_left = -1368
 limit_right = 1432
 limit_smoothed = true
 
-[node name="Cat" parent="." unique_id=239263429 instance=ExtResource("21_r4c1v")]
+[node name="living_room_cat" parent="." unique_id=239263429 instance=ExtResource("21_r4c1v")]
 position = Vector2(843, -33)
 
 [node name="Telephone" parent="." unique_id=355435855 instance=ExtResource("22_lnpfk")]

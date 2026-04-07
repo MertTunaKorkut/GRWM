@@ -17,7 +17,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 		
 	# Here we get the input direction: -1, 0, 1
-	var direction := Input.get_axis("move_left", "move_right")
+	var direction := Input.get_axis("walk_left", "walk_right")
+	var running := Input.is_key_pressed(KEY_SHIFT)
 	
 	# Here we will flip the sprite
 	if direction > 0:
@@ -34,14 +35,27 @@ func _physics_process(delta: float) -> void:
 				animated_sprite.play("idle_inside")
 		else:
 			if PlayerStats.clothed:
-				animated_sprite.play("walk_clothes_normal")
+				if running:
+					animated_sprite.play("walk_clothes_normal", 1.5)
+				else:
+					animated_sprite.play("walk_clothes_normal")
+				
 			else:
-				animated_sprite.play("walk_inside_normal")
+				if running:
+					animated_sprite.play("walk_inside_normal", 1.5)
+				else:
+					animated_sprite.play("walk_inside_normal")
 	
 	# Here we will apply the movement
 	if direction:
-		velocity.x = direction * SPEED
+		if running:
+			velocity.x = direction * (SPEED + 50)
+		else:
+			velocity.x = direction * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		if running:
+			velocity.x = move_toward(velocity.x, 0, SPEED + 50)
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
