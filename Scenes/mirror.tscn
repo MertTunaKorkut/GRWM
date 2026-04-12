@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://vs5v18fdpuix"]
+
+[ext_resource type="Script" uid="uid://b68o6ukq66kgi" path="res://Assets/Scripts/mirror.gd" id="1_h3i6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2mjjl"]
+size = Vector2(58.75, 116.5)
+
+[node name="mirror" type="Area2D" unique_id=1782733596]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_h3i6c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=617390402]
+shape = SubResource("RectangleShape2D_2mjjl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

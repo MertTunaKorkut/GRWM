@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dl6icl2i23el7"]
+
+[ext_resource type="Script" uid="uid://cf0vyb8q6lijk" path="res://Assets/Scripts/door.gd" id="1_ineus"]
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="2_hm0ju"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3pnf"]
+size = Vector2(120, 188)
+
+[node name="living_room_to_corridor_door" type="Area2D" unique_id=595128424]
+collision_mask = 2
+script = ExtResource("1_ineus")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1059039917]
+shape = SubResource("RectangleShape2D_h3pnf")
+debug_color = Color(0.55022967, 0.33995318, 0.9383514, 0.41960785)
+
+[node name="door_action_label" type="Label" parent="." unique_id=216017536]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -120.0
+offset_right = 12.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hm0ju")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 3
+vertical_alignment = 3
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

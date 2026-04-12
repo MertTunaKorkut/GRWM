@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b2qkv7wrpjgk2"]
+
+[ext_resource type="Script" uid="uid://y6iyeceriyuw" path="res://Assets/Scripts/lamp.gd" id="1_3b5q5"]
+
+[node name="lamp" type="Area2D" unique_id=1462716535]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_3b5q5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

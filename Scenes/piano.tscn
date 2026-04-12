@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://djnbcpkg6udpo"]
+
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="1_qdus8"]
+[ext_resource type="Script" uid="uid://cuigk5er5f05g" path="res://Assets/Scripts/piano.gd" id="1_v6hsj"]
+[ext_resource type="AudioStream" uid="uid://cyaywrdnj6yxf" path="res://Assets/Sounds/E5.wav" id="3_1krru"]
+[ext_resource type="AudioStream" uid="uid://b6k0n02pcga0k" path="res://Assets/Sounds/E4_true.wav" id="4_eambc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v6hsj"]
+size = Vector2(158.5, 121)
+
+[node name="piano" type="Area2D" unique_id=1419598270]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_v6hsj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=639978831]
+shape = SubResource("RectangleShape2D_v6hsj")
+
+[node name="piano_action_label" type="Label" parent="." unique_id=707835339]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 32.0
+offset_top = -131.0
+offset_right = 72.0
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_qdus8")
+theme_override_font_sizes/font_size = 30
+
+[node name="piano_sound_player_E5" type="AudioStreamPlayer2D" parent="." unique_id=2109252467]
+stream = ExtResource("3_1krru")
+bus = &"Piano"
+
+[node name="Timer" type="Timer" parent="." unique_id=2008618955]
+wait_time = 10.0
+
+[node name="piano_sound_player_E4" type="AudioStreamPlayer2D" parent="." unique_id=1447488431]
+stream = ExtResource("4_eambc")
+bus = &"Piano"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
