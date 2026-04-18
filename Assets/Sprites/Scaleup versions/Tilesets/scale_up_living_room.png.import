@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5gs2eop0qyfp"
-path="res://.godot/imported/scale_up_laundry.png-37f6334416266345270f0f87be285114.ctex"
+uid="uid://bseptvpivuft2"
+path="res://.godot/imported/scale_up_living_room.png-6a384ee1ff70c9c8308a1b627251c181.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scale_up_laundry.png"
-dest_files=["res://.godot/imported/scale_up_laundry.png-37f6334416266345270f0f87be285114.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_living_room.png"
+dest_files=["res://.godot/imported/scale_up_living_room.png-6a384ee1ff70c9c8308a1b627251c181.ctex"]
 
 [params]
 

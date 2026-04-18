@@ -26,5 +26,8 @@ func _on_body_exited(_body: Node2D) -> void:
 	medal_action_label.text = ""
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if PlayerStats.is_in_dialogue:
+		return
+	
 	if at_medal && event.is_action_pressed("interact")&& DialogueManager.balloon_active == true:
 		DialogueManager.show_dialogue_balloon(DIALOGUE, "living_room_medal")

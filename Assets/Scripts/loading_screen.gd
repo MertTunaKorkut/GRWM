@@ -14,4 +14,4 @@ func _on_progress_changed(_new_value: float) -> void:
 func _on_load_finished() -> void:
 	animation_player.play_backwards("transition")
 	await animation_player.animation_finished
-	queue_free()
+	queue_free.call_deferred()

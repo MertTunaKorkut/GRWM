@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3pnf"]
 size = Vector2(120, 188)
 
-[node name="living_room_to_corridor_door" type="Area2D" unique_id=595128424]
+[node name="door" type="Area2D" unique_id=595128424]
 collision_mask = 2
 script = ExtResource("1_ineus")
 
@@ -14,7 +14,7 @@ script = ExtResource("1_ineus")
 shape = SubResource("RectangleShape2D_h3pnf")
 debug_color = Color(0.55022967, 0.33995318, 0.9383514, 0.41960785)
 
-[node name="door_action_label" type="Label" parent="." unique_id=216017536]
+[node name="door_action_label" type="Label" parent="." unique_id=234231196]
 z_index = 1
 anchors_preset = 8
 anchor_left = 0.5

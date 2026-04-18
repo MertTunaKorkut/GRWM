@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brb25dv12bawh"
-path="res://.godot/imported/scale_up_Lamps_and_doors.png-254075f7eb00ad6027b3ab75ccf90952.ctex"
+path="res://.godot/imported/scale_up_Lamps_and_doors.png-0c640399c7808afbdebedfe4f1e778c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scale_up_Lamps_and_doors.png"
-dest_files=["res://.godot/imported/scale_up_Lamps_and_doors.png-254075f7eb00ad6027b3ab75ccf90952.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_Lamps_and_doors.png"
+dest_files=["res://.godot/imported/scale_up_Lamps_and_doors.png-0c640399c7808afbdebedfe4f1e778c5.ctex"]
 
 [params]
 

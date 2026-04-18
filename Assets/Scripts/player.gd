@@ -8,6 +8,9 @@ const JUMP_VELOCITY = -600.0
 
 
 func _physics_process(delta: float) -> void:
+	if PlayerStats.is_in_dialogue:
+		return
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -29,22 +32,60 @@ func _physics_process(delta: float) -> void:
 	# Here we will play the animations
 	if is_on_floor():
 		if direction == 0:
-			if PlayerStats.clothed:
-				animated_sprite.play("idle_clothes")
-			else:
-				animated_sprite.play("idle_inside")
+			match PlayerStats.clothing_stats:
+				Vector3i(0,0,0):
+					animated_sprite.play("idle_inside_no_backpack_no_shoes")
+				Vector3i(1,0,0):
+					animated_sprite.play("idle_inside_no_backpack_shoes")
+				Vector3i(0,0,1):
+					animated_sprite.play("idle_inside_backpack_no_shoes")
+				Vector3i(1,0,1):
+					animated_sprite.play("idle_inside_backpack_shoes")
+				Vector3i(0,1,0):
+					animated_sprite.play("idle_clothes_no_backpack_no_shoes")
+				Vector3i(1,1,0):
+					animated_sprite.play("idle_clothes_no_backpack_shoes")
+				Vector3i(0,1,1):
+					animated_sprite.play("idle_clothes_backpack_no_shoes")
+				Vector3i(1,1,1):
+					animated_sprite.play("idle_clothes_backpack_shoes")
 		else:
-			if PlayerStats.clothed:
-				if running:
-					animated_sprite.play("walk_clothes_normal", 1.5)
-				else:
-					animated_sprite.play("walk_clothes_normal")
-				
+			if running:
+				match PlayerStats.clothing_stats:
+					Vector3i(0,0,0):
+						animated_sprite.play("walk_inside_normal_no_backpack_no_shoes", 1.5)
+					Vector3i(1,0,0):
+						animated_sprite.play("walk_inside_normal_no_backpack_shoes", 1.5)
+					Vector3i(0,0,1):
+						animated_sprite.play("walk_inside_normal_backpack_no_shoes", 1.5)
+					Vector3i(1,0,1):
+						animated_sprite.play("walk_inside_normal_backpack_shoes", 1.5)
+					Vector3i(0,1,0):
+						animated_sprite.play("walk_clothes_normal_no_backpack_no_shoes", 1.5)
+					Vector3i(1,1,0):
+						animated_sprite.play("walk_clothes_normal_no_backpack_shoes", 1.5)
+					Vector3i(0,1,1):
+						animated_sprite.play("walk_clothes_normal_backpack_no_shoes", 1.5)
+					Vector3i(1,1,1):
+						animated_sprite.play("walk_clothes_normal_backpack_shoes", 1.5)
 			else:
-				if running:
-					animated_sprite.play("walk_inside_normal", 1.5)
-				else:
-					animated_sprite.play("walk_inside_normal")
+				match PlayerStats.clothing_stats:
+					Vector3i(0,0,0):
+						animated_sprite.play("walk_inside_normal_no_backpack_no_shoes")
+					Vector3i(1,0,0):
+						animated_sprite.play("walk_inside_normal_no_backpack_shoes")
+					Vector3i(0,0,1):
+						animated_sprite.play("walk_inside_normal_backpack_no_shoes")
+					Vector3i(1,0,1):
+						animated_sprite.play("walk_inside_normal_backpack_shoes")
+					Vector3i(0,1,0):
+						animated_sprite.play("walk_clothes_normal_no_backpack_no_shoes")
+					Vector3i(1,1,0):
+						animated_sprite.play("walk_clothes_normal_no_backpack_shoes")
+					Vector3i(0,1,1):
+						animated_sprite.play("walk_clothes_normal_backpack_no_shoes")
+					Vector3i(1,1,1):
+						animated_sprite.play("walk_clothes_normal_backpack_shoes")
 	
 	# Here we will apply the movement
 	if direction:

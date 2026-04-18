@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bseptvpivuft2"
-path="res://.godot/imported/scale_up_living_room.png-a0bb3f749bdef787f3ae9777dc837179.ctex"
+uid="uid://ctdomlkooi3rn"
+path="res://.godot/imported/00scaleup_lamba.png-a0becd3cdfd45d5629cc678cab8ffeb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scale_up_living_room.png"
-dest_files=["res://.godot/imported/scale_up_living_room.png-a0bb3f749bdef787f3ae9777dc837179.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/00scaleup_lamba.png"
+dest_files=["res://.godot/imported/00scaleup_lamba.png-a0becd3cdfd45d5629cc678cab8ffeb9.ctex"]
 
 [params]
 

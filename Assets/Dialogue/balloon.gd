@@ -44,6 +44,7 @@ var dialogue_line: DialogueLine:
 			dialogue_line = value
 			apply_dialogue_line()
 		else:
+			PlayerStats.is_in_dialogue = false
 			# The dialogue has finished so close the balloon
 			if owner == null:
 				queue_free()
@@ -72,6 +73,8 @@ var mutation_cooldown: Timer = Timer.new()
 
 
 func _ready() -> void:
+	PlayerStats.is_in_dialogue = true
+	
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 

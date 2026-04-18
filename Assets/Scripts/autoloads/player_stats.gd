@@ -1,10 +1,14 @@
 extends Node
 
-var clothed: bool = false
+var backpack_full: bool = false
+# x -> shoes, y -> clothes, z -> has_backpack
+var clothing_stats := Vector3i(0,0,0)
+
 var last_scene: String = ""
 var living_room_light: bool = true
 var living_room_tv: bool = false
 var telephone: bool = true
+var is_in_dialogue: bool = false
 
 func last_scene_setter(scene_name: String) -> void:
 	last_scene = scene_name

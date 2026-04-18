@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w5r77b5sq6il"
-path="res://.godot/imported/scale_up_walls.png-7356db1baae5108bf86248b889386e00.ctex"
+uid="uid://cw87grhhe3rks"
+path="res://.godot/imported/00scaleup_parentbedroom.png-29233ad919a849fdd641b6ca467d0d5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scale_up_walls.png"
-dest_files=["res://.godot/imported/scale_up_walls.png-7356db1baae5108bf86248b889386e00.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_parentbedroom.png"
+dest_files=["res://.godot/imported/00scaleup_parentbedroom.png-29233ad919a849fdd641b6ca467d0d5c.ctex"]
 
 [params]
 

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bddlgf6g386hd"]
+
+[ext_resource type="Script" uid="uid://dbc3v2e03ysab" path="res://Assets/Scripts/laundry_room.gd" id="1_fivg3"]
+[ext_resource type="Texture2D" uid="uid://ce38mh4hybcqy" path="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_laundryroom.png" id="1_xutie"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="2_fivg3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_e6ct5"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rt7pn"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d4gf7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xutie"]
+size = Vector2(10, 319)
+
+[node name="Node2D" type="Node2D" unique_id=1490074478]
+script = ExtResource("1_fivg3")
+
+[node name="background" type="Sprite2D" parent="." unique_id=550746180]
+position = Vector2(0, -161)
+texture = ExtResource("1_xutie")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background" unique_id=1301707432]
+
+[node name="floor" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=107313000]
+position = Vector2(0, 158)
+shape = SubResource("WorldBoundaryShape2D_e6ct5")
+
+[node name="left_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=88976963]
+position = Vector2(-520, 0)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_rt7pn")
+
+[node name="right_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1175464609]
+position = Vector2(520, 0)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_d4gf7")
+
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("2_fivg3")]
+position = Vector2(82, -18)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=584438810]
+offset = Vector2(0, -150)
+limit_left = -520
+limit_right = 520
+limit_smoothed = true
+
+[node name="bathroom_door" type="Area2D" parent="." unique_id=1943851090]
+position = Vector2(519, -11)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bathroom_door" unique_id=632748441]
+position = Vector2(-5, -149.5)
+shape = SubResource("RectangleShape2D_xutie")
+
+[node name="spawnpoint" type="Marker2D" parent="." unique_id=1173922014]
+position = Vector2(443.00003, -12)
+scale = Vector2(8.93, 8.93)
+
+[connection signal="body_entered" from="bathroom_door" to="." method="_on_bathroom_door_body_entered"]

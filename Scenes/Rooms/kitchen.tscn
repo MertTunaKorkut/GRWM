@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://cw2abse4cqdmh"]
+
+[ext_resource type="Script" uid="uid://crqaolrdg88dp" path="res://Assets/Scripts/kitchen.gd" id="1_6pjjr"]
+[ext_resource type="Texture2D" uid="uid://iy1tbd61s4hv" path="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_kitchen.png" id="1_7u47w"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="1_23qos"]
+[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/Interactables/door.tscn" id="3_lvc4q"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6pjjr"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pb1w8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jbuf1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cetdd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jdfhw"]
+size = Vector2(10, 319)
+
+[node name="Node2D" type="Node2D" unique_id=1040439718]
+script = ExtResource("1_6pjjr")
+
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("1_23qos")]
+position = Vector2(89, -20)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1356915551]
+offset = Vector2(0, -150)
+limit_left = -1320
+limit_right = 1320
+limit_smoothed = true
+
+[node name="spawnpoint" type="Marker2D" parent="." unique_id=1714460099]
+z_index = 1
+position = Vector2(503, -4)
+scale = Vector2(7.715, 7.715)
+
+[node name="spawnpoint2" type="Marker2D" parent="." unique_id=110812703]
+z_index = 1
+position = Vector2(1244, -7)
+scale = Vector2(7.715, 7.715)
+
+[node name="kitchen_to_corridor_door" parent="." unique_id=595128424 instance=ExtResource("3_lvc4q")]
+z_index = 1
+position = Vector2(503, -109)
+next_scene = &"uid://berrno2ht2u67"
+door_scene = "kitchen"
+
+[node name="background" type="Sprite2D" parent="." unique_id=1960309966]
+position = Vector2(0, -160)
+texture = ExtResource("1_7u47w")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background" unique_id=2023063302]
+collision_mask = 2
+physics_material_override = SubResource("PhysicsMaterial_6pjjr")
+
+[node name="floor" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1088076730]
+position = Vector2(0, 158)
+shape = SubResource("WorldBoundaryShape2D_pb1w8")
+
+[node name="left_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=479515377]
+position = Vector2(-1320, 0)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_jbuf1")
+
+[node name="right_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1729751081]
+position = Vector2(1320, 0)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_cetdd")
+
+[node name="living_room_door" type="Area2D" parent="." unique_id=2053020087]
+position = Vector2(1319, -11)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="living_room_door" unique_id=378156968]
+position = Vector2(-3, -149.5)
+shape = SubResource("RectangleShape2D_jdfhw")
+
+[connection signal="body_entered" from="living_room_door" to="." method="_on_living_room_door_body_entered"]

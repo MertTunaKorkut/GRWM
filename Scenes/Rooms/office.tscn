@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b25sojqwa4a8m"]
+
+[ext_resource type="Script" uid="uid://dww6ki8kfvsvu" path="res://Assets/Scripts/office.gd" id="1_cumm5"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="1_vggx3"]
+[ext_resource type="Texture2D" uid="uid://djgsp5sn8ktth" path="res://Assets/Sprites/Scaleup versions/Full rooms/scaleup_officeroom.png" id="2_cumm5"]
+[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/Interactables/door.tscn" id="3_2jlrf"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cumm5"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2jlrf"]
+distance = 1.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cumm5"]
+distance = -2.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7xo7e"]
+
+[node name="Node2D" type="Node2D" unique_id=747603122]
+script = ExtResource("1_cumm5")
+
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("1_vggx3")]
+position = Vector2(31, -19)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1564632820]
+offset = Vector2(0, -150)
+limit_left = -700
+limit_right = 700
+limit_smoothed = true
+
+[node name="background" type="Sprite2D" parent="." unique_id=1028731899]
+position = Vector2(0, -159)
+texture = ExtResource("2_cumm5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background" unique_id=601285791]
+collision_mask = 2
+physics_material_override = SubResource("PhysicsMaterial_cumm5")
+
+[node name="floor" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1741853451]
+position = Vector2(0, 158)
+shape = SubResource("WorldBoundaryShape2D_2jlrf")
+
+[node name="left_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1599587839]
+position = Vector2(-699, -6)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_cumm5")
+
+[node name="right_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=2006445234]
+position = Vector2(701, -3)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_7xo7e")
+
+[node name="office_to_corridor_door" parent="." unique_id=595128424 instance=ExtResource("3_2jlrf")]
+position = Vector2(244, -110)
+next_scene = &"uid://berrno2ht2u67"
+door_scene = "office"
+
+[node name="spawnpoint" type="Marker2D" parent="." unique_id=2083294838]
+position = Vector2(244, -4)
+scale = Vector2(8.97, 8.97)

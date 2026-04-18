@@ -1,36 +1,36 @@
 [gd_scene format=3 uid="uid://bjxmf7uj7vlll"]
 
-[ext_resource type="Texture2D" uid="uid://djnitb274a6k" path="res://Assets/Sprites/Small versions/Walls 16x48.png" id="1_cyjoc"]
-[ext_resource type="Script" uid="uid://c7ukctyty5gib" path="res://Assets/Scripts/living_room.gd" id="1_mx58p"]
-[ext_resource type="Texture2D" uid="uid://bseptvpivuft2" path="res://Assets/Sprites/Scaleup versions/scale_up_living_room.png" id="2_j1367"]
-[ext_resource type="Texture2D" uid="uid://b2rinlncijxk5" path="res://Assets/Sprites/Small versions/bathroom.png" id="3_r4c1v"]
-[ext_resource type="Texture2D" uid="uid://tnlpnqetny5v" path="res://Assets/Sprites/Small versions/living_room.png" id="4_lnpfk"]
-[ext_resource type="Texture2D" uid="uid://dttlkdflcdq6g" path="res://Assets/Sprites/Small versions/kids_room.png" id="5_bppkp"]
-[ext_resource type="Texture2D" uid="uid://yir7rqvjgd" path="res://Assets/Sprites/Small versions/kitchen.png" id="6_01uwp"]
-[ext_resource type="Texture2D" uid="uid://b8vr8vmqfi4di" path="res://Assets/Sprites/Small versions/Lamps_and_doors 16x16.png" id="7_e7c0w"]
-[ext_resource type="Texture2D" uid="uid://1w0ii3an65qg" path="res://Assets/Sprites/Small versions/laundry.png" id="8_wbyxj"]
-[ext_resource type="Texture2D" uid="uid://pvvrbcafw1va" path="res://Assets/Sprites/Small versions/office.png" id="9_bjg11"]
-[ext_resource type="Texture2D" uid="uid://c385o62uyo8jo" path="res://Assets/Sprites/Small versions/parent_room.png" id="10_mx58p"]
-[ext_resource type="Texture2D" uid="uid://bukbxbsokcic1" path="res://Assets/Sprites/Scaleup versions/scale_up_bathroom.png" id="11_8raru"]
-[ext_resource type="Texture2D" uid="uid://bytj7abaoawa6" path="res://Assets/Sprites/Scaleup versions/scaleup_office.png" id="12_ngfi2"]
-[ext_resource type="Texture2D" uid="uid://dn75ctcdf1x86" path="res://Assets/Sprites/Scaleup versions/scaleup_livingroom_background.png" id="13_sdyff"]
-[ext_resource type="Texture2D" uid="uid://b4vrr4xoredwx" path="res://Assets/Sprites/Scaleup versions/scale_up_kids_room.png" id="14_44fth"]
-[ext_resource type="Texture2D" uid="uid://c1c4tna8iy0qt" path="res://Assets/Sprites/Scaleup versions/scale_up_kitchen.png" id="15_sqrvo"]
-[ext_resource type="Texture2D" uid="uid://brb25dv12bawh" path="res://Assets/Sprites/Scaleup versions/scale_up_Lamps_and_doors.png" id="16_ds3x3"]
-[ext_resource type="Texture2D" uid="uid://5gs2eop0qyfp" path="res://Assets/Sprites/Scaleup versions/scale_up_laundry.png" id="17_p8voa"]
-[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="18_6khbn"]
-[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/door.tscn" id="21_lnpfk"]
-[ext_resource type="PackedScene" uid="uid://d2b4b1y20b0ut" path="res://Scenes/cat.tscn" id="21_r4c1v"]
-[ext_resource type="PackedScene" uid="uid://54un3634v1ft" path="res://Scenes/window.tscn" id="22_bppkp"]
-[ext_resource type="PackedScene" uid="uid://cwa17xced2fsc" path="res://Scenes/telephone.tscn" id="22_lnpfk"]
-[ext_resource type="PackedScene" uid="uid://b2qkv7wrpjgk2" path="res://Scenes/lamp.tscn" id="23_bppkp"]
-[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="24_01uwp"]
-[ext_resource type="PackedScene" uid="uid://hoqoul8dw4al" path="res://Scenes/tv.tscn" id="25_e7c0w"]
-[ext_resource type="PackedScene" uid="uid://c37je7huoumue" path="res://Scenes/medal.tscn" id="26_wbyxj"]
-[ext_resource type="PackedScene" uid="uid://djnbcpkg6udpo" path="res://Scenes/piano.tscn" id="27_bjg11"]
+[ext_resource type="Script" uid="uid://c7ukctyty5gib" path="res://Assets/Scripts/living_room.gd" id="1_wh8ms"]
+[ext_resource type="Texture2D" uid="uid://djnitb274a6k" path="res://Assets/Sprites/Small versions/Walls 16x48.png" id="2_p67w3"]
+[ext_resource type="Texture2D" uid="uid://bseptvpivuft2" path="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_living_room.png" id="3_bomwd"]
+[ext_resource type="Texture2D" uid="uid://b2rinlncijxk5" path="res://Assets/Sprites/Small versions/bathroom.png" id="4_rd2v0"]
+[ext_resource type="Texture2D" uid="uid://tnlpnqetny5v" path="res://Assets/Sprites/Small versions/living_room.png" id="5_vodfl"]
+[ext_resource type="Texture2D" uid="uid://dttlkdflcdq6g" path="res://Assets/Sprites/Small versions/kids_room.png" id="6_fj4ob"]
+[ext_resource type="Texture2D" uid="uid://yir7rqvjgd" path="res://Assets/Sprites/Small versions/kitchen.png" id="7_v54is"]
+[ext_resource type="Texture2D" uid="uid://b8vr8vmqfi4di" path="res://Assets/Sprites/Small versions/Lamps_and_doors 16x16.png" id="8_70j8u"]
+[ext_resource type="Texture2D" uid="uid://1w0ii3an65qg" path="res://Assets/Sprites/Small versions/laundry.png" id="9_gqiv2"]
+[ext_resource type="Texture2D" uid="uid://pvvrbcafw1va" path="res://Assets/Sprites/Small versions/office.png" id="10_a8vka"]
+[ext_resource type="Texture2D" uid="uid://c385o62uyo8jo" path="res://Assets/Sprites/Small versions/parent_room.png" id="11_ysy1m"]
+[ext_resource type="Texture2D" uid="uid://bukbxbsokcic1" path="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_bathroom.png" id="12_8b2w7"]
+[ext_resource type="Texture2D" uid="uid://bytj7abaoawa6" path="res://Assets/Sprites/Scaleup versions/Tilesets/scaleup_office.png" id="13_3y1ef"]
+[ext_resource type="Texture2D" uid="uid://dn75ctcdf1x86" path="res://Assets/Sprites/Scaleup versions/Full rooms/scaleup_livingroom_background.png" id="14_o5xrj"]
+[ext_resource type="Texture2D" uid="uid://b4vrr4xoredwx" path="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_kids_room.png" id="15_7fdhx"]
+[ext_resource type="Texture2D" uid="uid://c1c4tna8iy0qt" path="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_kitchen.png" id="16_0cskt"]
+[ext_resource type="Texture2D" uid="uid://brb25dv12bawh" path="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_Lamps_and_doors.png" id="17_tshg7"]
+[ext_resource type="Texture2D" uid="uid://5gs2eop0qyfp" path="res://Assets/Sprites/Scaleup versions/Tilesets/scale_up_laundry.png" id="18_4gl4x"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="19_irugr"]
+[ext_resource type="PackedScene" uid="uid://d2b4b1y20b0ut" path="res://Scenes/Interactables/cat.tscn" id="20_t5860"]
+[ext_resource type="PackedScene" uid="uid://cwa17xced2fsc" path="res://Scenes/Interactables/telephone.tscn" id="21_y0xgk"]
+[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/Interactables/door.tscn" id="22_bo13u"]
+[ext_resource type="PackedScene" uid="uid://54un3634v1ft" path="res://Scenes/Interactables/window.tscn" id="23_034bd"]
+[ext_resource type="PackedScene" uid="uid://b2qkv7wrpjgk2" path="res://Scenes/Interactables/lamp.tscn" id="24_tpx6c"]
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="25_sgcga"]
+[ext_resource type="PackedScene" uid="uid://hoqoul8dw4al" path="res://Scenes/Interactables/tv.tscn" id="26_w0537"]
+[ext_resource type="PackedScene" uid="uid://c37je7huoumue" path="res://Scenes/Interactables/medal.tscn" id="27_8i60g"]
+[ext_resource type="PackedScene" uid="uid://djnbcpkg6udpo" path="res://Scenes/Interactables/piano.tscn" id="28_5w21h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_27vqi"]
-texture = ExtResource("1_cyjoc")
+texture = ExtResource("2_p67w3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -357,7 +357,7 @@ texture = ExtResource("1_cyjoc")
 2:16/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xp5k3"]
-texture = ExtResource("2_j1367")
+texture = ExtResource("3_bomwd")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -458,7 +458,7 @@ texture_region_size = Vector2i(64, 64)
 14:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eifrl"]
-texture = ExtResource("3_r4c1v")
+texture = ExtResource("4_rd2v0")
 1:0/0 = 0
 4:0/0 = 0
 6:0/0 = 0
@@ -584,7 +584,7 @@ texture = ExtResource("3_r4c1v")
 16:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_div4w"]
-texture = ExtResource("4_lnpfk")
+texture = ExtResource("5_vodfl")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -684,7 +684,7 @@ texture = ExtResource("4_lnpfk")
 14:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_466dt"]
-texture = ExtResource("5_bppkp")
+texture = ExtResource("6_fj4ob")
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -788,7 +788,7 @@ texture = ExtResource("5_bppkp")
 15:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50jso"]
-texture = ExtResource("6_01uwp")
+texture = ExtResource("7_v54is")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -909,7 +909,7 @@ texture = ExtResource("6_01uwp")
 17:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgoqw"]
-texture = ExtResource("7_e7c0w")
+texture = ExtResource("8_70j8u")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -1010,7 +1010,7 @@ texture = ExtResource("7_e7c0w")
 16:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s53r5"]
-texture = ExtResource("8_wbyxj")
+texture = ExtResource("9_gqiv2")
 0:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -1051,7 +1051,7 @@ texture = ExtResource("8_wbyxj")
 9:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t1epa"]
-texture = ExtResource("9_bjg11")
+texture = ExtResource("10_a8vka")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1113,7 +1113,7 @@ texture = ExtResource("9_bjg11")
 9:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vttg1"]
-texture = ExtResource("10_mx58p")
+texture = ExtResource("11_ysy1m")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -1179,7 +1179,7 @@ texture = ExtResource("10_mx58p")
 12:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wcv01"]
-texture = ExtResource("11_8raru")
+texture = ExtResource("12_8b2w7")
 texture_region_size = Vector2i(64, 64)
 1:0/0 = 0
 4:0/0 = 0
@@ -1305,7 +1305,7 @@ texture_region_size = Vector2i(64, 64)
 16:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hvycv"]
-texture = ExtResource("12_ngfi2")
+texture = ExtResource("13_3y1ef")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -1389,13 +1389,13 @@ texture_region_size = Vector2i(64, 64)
 9:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihdih"]
-texture = ExtResource("13_sdyff")
+texture = ExtResource("14_o5xrj")
 texture_region_size = Vector2i(2800, 320)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-1184.9286, 158.79909, -1399.3579, 159.27873, -1400.4507, -161.46437, -1399.8302, 160.54018, -1184.2344, 160.23175, -999.4822, 159.92332, -676.55115, 160.23175, -384.7721, 160.54018, -189.22461, 160.23175, 134.63167, 160.23175, 377.9865, 159.92331, 604.6859, 159.92331, 793.1394, 159.92331, 1024.7738, 159.61487, 1312.5432, 160.23174, 1400.1387, 159.92331, 1399.8302, 152.21245, 1399.0083, -160.99173, 1399.522, 158.42587, 961.005, 158.42587, 662.06714, 158.42589, 562.048, 159.1723, 347.4515, 157.76427, 171.95227, 157.76427, -115.81717, 157.76427, -436.27765, 159.17229, -667.60657, 158.07271, -1011.3879, 159.5455)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mbniy"]
-texture = ExtResource("14_44fth")
+texture = ExtResource("15_7fdhx")
 texture_region_size = Vector2i(64, 64)
 5:0/0 = 0
 6:0/0 = 0
@@ -1500,7 +1500,7 @@ texture_region_size = Vector2i(64, 64)
 15:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sx5q4"]
-texture = ExtResource("15_sqrvo")
+texture = ExtResource("16_0cskt")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -1622,7 +1622,7 @@ texture_region_size = Vector2i(64, 64)
 17:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cgdf0"]
-texture = ExtResource("16_ds3x3")
+texture = ExtResource("17_tshg7")
 texture_region_size = Vector2i(64, 64)
 1:0/0 = 0
 2:0/0 = 0
@@ -1724,7 +1724,7 @@ texture_region_size = Vector2i(64, 64)
 16:5/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d3y62"]
-texture = ExtResource("17_p8voa")
+texture = ExtResource("18_4gl4x")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 2:0/0 = 0
@@ -1792,8 +1792,11 @@ size = Vector2(19.999998, 148.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wbyxj"]
 size = Vector2(31, 59)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wh8ms"]
+size = Vector2(3, 320)
+
 [node name="Node2D" type="Node2D" unique_id=2144675994]
-script = ExtResource("1_mx58p")
+script = ExtResource("1_wh8ms")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=539686314]
 visibility_layer = 2
@@ -1803,7 +1806,7 @@ layer_0/name = "background"
 layer_0/tile_data = PackedInt32Array(-196608, 5, 0)
 layer_1/name = "furniture"
 
-[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("18_6khbn")]
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("19_irugr")]
 position = Vector2(-1023, -25)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=184731922]
@@ -1813,22 +1816,22 @@ limit_left = -1368
 limit_right = 1432
 limit_smoothed = true
 
-[node name="living_room_cat" parent="." unique_id=239263429 instance=ExtResource("21_r4c1v")]
+[node name="living_room_cat" parent="." unique_id=239263429 instance=ExtResource("20_t5860")]
 position = Vector2(843, -33)
 
-[node name="Telephone" parent="." unique_id=355435855 instance=ExtResource("22_lnpfk")]
+[node name="Telephone" parent="." unique_id=355435855 instance=ExtResource("21_y0xgk")]
 position = Vector2(-1114, -88)
 
-[node name="living_room_to_corridor_door" parent="." unique_id=595128424 instance=ExtResource("21_lnpfk")]
+[node name="living_room_to_corridor_door" parent="." unique_id=595128424 instance=ExtResource("22_bo13u")]
 position = Vector2(-1240, -102)
 next_scene = &"uid://berrno2ht2u67"
 door_scene = "living_room"
 
-[node name="Window" parent="." unique_id=2071007079 instance=ExtResource("22_bppkp")]
+[node name="Window" parent="." unique_id=2071007079 instance=ExtResource("23_034bd")]
 z_index = 1
 position = Vector2(-854, -136)
 
-[node name="living_room_tall_lamp" parent="." unique_id=1462716535 instance=ExtResource("23_bppkp")]
+[node name="living_room_tall_lamp" parent="." unique_id=1462716535 instance=ExtResource("24_tpx6c")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="living_room_tall_lamp" unique_id=940566281]
 position = Vector2(-690, -85.875)
@@ -1847,13 +1850,13 @@ offset_bottom = -178.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("24_01uwp")
+theme_override_fonts/font = ExtResource("25_sgcga")
 theme_override_font_sizes/font_size = 30
 
-[node name="TV" parent="." unique_id=643270065 instance=ExtResource("25_e7c0w")]
+[node name="TV" parent="." unique_id=643270065 instance=ExtResource("26_w0537")]
 position = Vector2(398, -150)
 
-[node name="living_room_short_lamp" parent="." unique_id=669068911 instance=ExtResource("23_bppkp")]
+[node name="living_room_short_lamp" parent="." unique_id=669068911 instance=ExtResource("24_tpx6c")]
 
 [node name="lamp_action_label" type="Label" parent="living_room_short_lamp" unique_id=245008929]
 anchors_preset = 8
@@ -1868,7 +1871,7 @@ offset_bottom = -145.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("24_01uwp")
+theme_override_fonts/font = ExtResource("25_sgcga")
 theme_override_font_sizes/font_size = 30
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="living_room_short_lamp" unique_id=609427805]
@@ -1885,14 +1888,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="medal" parent="." unique_id=1677236196 instance=ExtResource("26_wbyxj")]
+[node name="medal" parent="." unique_id=1677236196 instance=ExtResource("27_8i60g")]
 z_index = 1
 position = Vector2(-23, -87)
 collision_mask = 2
 
-[node name="piano" parent="." unique_id=1419598270 instance=ExtResource("27_bjg11")]
+[node name="piano" parent="." unique_id=1419598270 instance=ExtResource("28_5w21h")]
 z_index = 1
 position = Vector2(1069, -62)
 
 [node name="spawnpoint" type="Marker2D" parent="." unique_id=40084392]
 position = Vector2(-1249, -9)
+scale = Vector2(4.79, 4.79)
+
+[node name="spawnpoint2" type="Marker2D" parent="." unique_id=706387341]
+position = Vector2(-1249, -9)
+scale = Vector2(5.12, 5.12)
+
+[node name="kitchen_door" type="Area2D" parent="." unique_id=1918781611]
+position = Vector2(1432, -10)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kitchen_door" unique_id=2019999212]
+position = Vector2(-1.5, -150)
+shape = SubResource("RectangleShape2D_wh8ms")
+
+[connection signal="body_entered" from="kitchen_door" to="." method="_on_kitchen_door_body_entered"]

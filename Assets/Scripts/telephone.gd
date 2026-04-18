@@ -32,6 +32,9 @@ func _on_timer_before_ringing_timeout() -> void:
 	timer_before_ringing.queue_free()
 
 func  _unhandled_key_input(event: InputEvent) -> void:
+	if PlayerStats.is_in_dialogue:
+		return
+	
 	if at_tel && event.is_action_pressed("interact"):
 		PlayerStats.telephone_switch()
 		audio_stream_player_2d.stop()

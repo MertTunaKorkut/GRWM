@@ -15,19 +15,21 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(_body: Node2D) -> void:
 	at_mirror = true
 	mirror_action_label.text = "[E]"
 
 
-func _on_body_exited(body: Node2D) -> void:
+func _on_body_exited(_body: Node2D) -> void:
 	at_mirror = false
 	mirror_action_label.text = ""
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if PlayerStats.is_in_dialogue:
+		return
+	
 	if at_mirror && event.is_action_pressed("interact"):
 		var chance := randf()
-		
 		
 		if chance <= 0.8:
 			DialogueManager.show_dialogue_balloon(DIALOGUE, "mirror_handsome")

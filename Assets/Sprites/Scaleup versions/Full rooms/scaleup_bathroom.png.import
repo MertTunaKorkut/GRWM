@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bukbxbsokcic1"
-path="res://.godot/imported/scale_up_bathroom.png-a7c27454cd50664dbb1a7e26cd31e2f2.ctex"
+uid="uid://xf1vwj4leima"
+path="res://.godot/imported/scaleup_bathroom.png-3adb3335a95440a88e93b6e6a8d0a261.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scale_up_bathroom.png"
-dest_files=["res://.godot/imported/scale_up_bathroom.png-a7c27454cd50664dbb1a7e26cd31e2f2.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Full rooms/scaleup_bathroom.png"
+dest_files=["res://.godot/imported/scaleup_bathroom.png-3adb3335a95440a88e93b6e6a8d0a261.ctex"]
 
 [params]
 

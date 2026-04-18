@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://br0fflyrq1me5"]
+
+[ext_resource type="Texture2D" uid="uid://driveyv1n0dvl" path="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_childroom.png" id="1_ltj72"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="2_c16nt"]
+[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/Interactables/door.tscn" id="3_jqfes"]
+[ext_resource type="PackedScene" uid="uid://dufew1wujmf3b" path="res://Scenes/Interactables/bag.tscn" id="4_jqfes"]
+[ext_resource type="FontFile" uid="uid://flu0e8sldhgh" path="res://Assets/Fonts/ByteBounce.ttf" id="5_7ugdx"]
+[ext_resource type="Texture2D" uid="uid://vipwn6lkujdx" path="res://Assets/Sprites/Scaleup versions/00scaleup_dolap_acik_childroom.png" id="6_yq6wd"]
+[ext_resource type="Texture2D" uid="uid://ctdomlkooi3rn" path="res://Assets/Sprites/Scaleup versions/00scaleup_lamba.png" id="7_gfr1i"]
+[ext_resource type="PackedScene" uid="uid://14hl0gjj07m8" path="res://Scenes/Interactables/wardrobe.tscn" id="8_gfr1i"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jyh4c"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_oomg0"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_da16q"]
+
+[node name="Node2D" type="Node2D" unique_id=1846101227]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1971145340]
+position = Vector2(0, -161)
+texture = ExtResource("1_ltj72")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background" unique_id=727633203]
+
+[node name="floor" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1085542750]
+position = Vector2(0, 158)
+shape = SubResource("WorldBoundaryShape2D_jyh4c")
+
+[node name="left_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1587811069]
+position = Vector2(-1020, 0)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_oomg0")
+
+[node name="right_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=903191256]
+position = Vector2(1020, 0)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_da16q")
+
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("2_c16nt")]
+z_index = 3
+position = Vector2(517, -11)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=4624124]
+offset = Vector2(0, -150)
+limit_left = -1020
+limit_right = 1020
+limit_smoothed = true
+
+[node name="childbedroom_to_corridor_door" parent="." unique_id=595128424 instance=ExtResource("3_jqfes")]
+position = Vector2(-825, -124)
+next_scene = &"uid://berrno2ht2u67"
+door_scene = "kid_bedroom"
+
+[node name="spawnpoint" type="Marker2D" parent="." unique_id=1601459524]
+position = Vector2(-824.00006, -9.000001)
+scale = Vector2(7.72, 7.72)
+
+[node name="bag" parent="." unique_id=1832582340 instance=ExtResource("4_jqfes")]
+position = Vector2(126, -43)
+scale = Vector2(0.3, 0.3)
+
+[node name="bag_action_label" type="Label" parent="bag" unique_id=545264368]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.33333
+offset_top = -274.66663
+offset_right = -35.333332
+offset_bottom = -205.66664
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_7ugdx")
+theme_override_font_sizes/font_size = 100
+
+[node name="wardrobe" type="Sprite2D" parent="." unique_id=1995358152]
+visible = false
+z_index = 1
+position = Vector2(814, -121)
+texture = ExtResource("6_yq6wd")
+
+[node name="lamp" type="Sprite2D" parent="." unique_id=1584203261]
+z_index = 2
+position = Vector2(930, -121)
+texture = ExtResource("7_gfr1i")
+
+[node name="wardrobe_area" parent="." unique_id=1697284187 instance=ExtResource("8_gfr1i")]
+z_index = 1
+position = Vector2(809, -59)

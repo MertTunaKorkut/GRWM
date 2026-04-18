@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bytj7abaoawa6"
-path="res://.godot/imported/scaleup_office.png-1828ae49eb2a3b204b14d97c691ebe9a.ctex"
+uid="uid://b1fy5rpdacneg"
+path="res://.godot/imported/00scaleup_uzun hal.png-55cb3fae0cbbe019051a52b99a2d5c6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scaleup_office.png"
-dest_files=["res://.godot/imported/scaleup_office.png-1828ae49eb2a3b204b14d97c691ebe9a.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_uzun hal.png"
+dest_files=["res://.godot/imported/00scaleup_uzun hal.png-55cb3fae0cbbe019051a52b99a2d5c6f.ctex"]
 
 [params]
 

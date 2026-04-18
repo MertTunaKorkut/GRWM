@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GAME206 Project"
-run/main_scene="uid://bjxmf7uj7vlll"
+run/main_scene="uid://br0fflyrq1me5"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

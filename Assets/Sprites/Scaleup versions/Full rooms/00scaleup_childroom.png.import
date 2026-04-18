@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1c4tna8iy0qt"
-path="res://.godot/imported/scale_up_kitchen.png-3a358075c7271bb2af1642763c6ec3cc.ctex"
+uid="uid://driveyv1n0dvl"
+path="res://.godot/imported/00scaleup_childroom.png-d1974fea463945b58d1922ad2b1405ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scale_up_kitchen.png"
-dest_files=["res://.godot/imported/scale_up_kitchen.png-3a358075c7271bb2af1642763c6ec3cc.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_childroom.png"
+dest_files=["res://.godot/imported/00scaleup_childroom.png-d1974fea463945b58d1922ad2b1405ed.ctex"]
 
 [params]
 

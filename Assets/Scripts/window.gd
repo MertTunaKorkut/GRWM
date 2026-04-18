@@ -25,5 +25,8 @@ func _on_body_exited(_body: Node2D) -> void:
 	window_action_label.text = ""
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if PlayerStats.is_in_dialogue:
+		return
+	
 	if at_window && event.is_action_pressed("interact"):
 		DialogueManager.show_dialogue_balloon(DIALOGUE, "living_room_window")

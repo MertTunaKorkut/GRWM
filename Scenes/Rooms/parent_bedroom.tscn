@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://srsntph3xjme"]
+
+[ext_resource type="Script" uid="uid://bo1unytcufrf5" path="res://Assets/Scripts/parent_bedroom.gd" id="1_bhojn"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="2_edklw"]
+[ext_resource type="Texture2D" uid="uid://cw87grhhe3rks" path="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_parentbedroom.png" id="3_aednt"]
+[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/Interactables/door.tscn" id="4_0aoel"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uc6vq"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_roahe"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_itfgt"]
+
+[node name="Node2D" type="Node2D" unique_id=1743152103]
+script = ExtResource("1_bhojn")
+
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("2_edklw")]
+position = Vector2(0, -13.2)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1354581851]
+offset = Vector2(0, -150)
+limit_left = -1320
+limit_right = 1320
+limit_smoothed = true
+
+[node name="background" type="Sprite2D" parent="." unique_id=1855607762]
+position = Vector2(0, -161)
+texture = ExtResource("3_aednt")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background" unique_id=1292789661]
+
+[node name="floor" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=747367700]
+position = Vector2(0, 158)
+shape = SubResource("WorldBoundaryShape2D_uc6vq")
+
+[node name="left_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1290280654]
+position = Vector2(-1320, 0)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_roahe")
+
+[node name="right_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1295873034]
+position = Vector2(1320, 0)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_itfgt")
+
+[node name="parent_bedroom_to_corridor_door" parent="." unique_id=595128424 instance=ExtResource("4_0aoel")]
+position = Vector2(-156, -119)
+next_scene = &"uid://berrno2ht2u67"
+door_scene = "parent_bedroom"
+
+[node name="spawnpoint" type="Marker2D" parent="." unique_id=1708773270]
+position = Vector2(-151, -7.000001)
+scale = Vector2(3.95, 3.95)

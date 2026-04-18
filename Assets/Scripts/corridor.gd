@@ -6,6 +6,7 @@ extends Node2D
 @onready var parent_bedroom_spawnpoint: Marker2D = $parent_bedroom_spawnpoint
 @onready var bathroom_spawnpoint: Marker2D = $bathroom_spawnpoint
 @onready var office_spawnpoint: Marker2D = $office_spawnpoint
+@onready var kitchen_spawnpoint: Marker2D = $kitchen_spawnpoint
 
 
 
@@ -25,17 +26,9 @@ func _ready() -> void:
 			player.global_position = parent_bedroom_spawnpoint.global_position
 		"kid_bedroom":
 			player.global_position = kid_bedroom_spawnpoint.global_position
-		
-	#if last_scene == "living_room":
-		#player.global_position = living_room_spawnpoint.global_position
-	#elif last_scene ==  "bathroom":
-		#player.global_position = bathroom_spawnpoint.global_position
-	#elif last_scene == "office":
-		#player.global_position = office_spawnpoint.global_position
-	#elif last_scene == "parent_bedroom":
-		#player.global_position = parent_bedroom_spawnpoint.global_position
-	#elif last_scene == "kid_bedroom":
-		#player.global_position = kid_bedroom_spawnpoint.global_position
+		"kitchen":
+			player.global_position = kitchen_spawnpoint.global_position
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

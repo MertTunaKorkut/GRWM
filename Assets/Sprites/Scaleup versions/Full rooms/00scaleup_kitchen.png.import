@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xf1vwj4leima"
-path="res://.godot/imported/scaleup_bathroom.png-f737fced728f032849cff1fa8c8bf110.ctex"
+uid="uid://iy1tbd61s4hv"
+path="res://.godot/imported/00scaleup_kitchen.png-b67c95c1f353732f215f8298bf0cdab3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scaleup_bathroom.png"
-dest_files=["res://.godot/imported/scaleup_bathroom.png-f737fced728f032849cff1fa8c8bf110.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_kitchen.png"
+dest_files=["res://.godot/imported/00scaleup_kitchen.png-b67c95c1f353732f215f8298bf0cdab3.ctex"]
 
 [params]
 

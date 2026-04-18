@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://berrno2ht2u67"]
+
+[ext_resource type="Script" uid="uid://ocrl5tgxpxea" path="res://Assets/Scripts/corridor.gd" id="1_d40ju"]
+[ext_resource type="PackedScene" uid="uid://cwmv7l3r0jbok" path="res://Scenes/player.tscn" id="2_i5ca1"]
+[ext_resource type="Texture2D" uid="uid://b1fy5rpdacneg" path="res://Assets/Sprites/Scaleup versions/Full rooms/00scaleup_uzun hal.png" id="3_ys6uq"]
+[ext_resource type="PackedScene" uid="uid://dl6icl2i23el7" path="res://Scenes/Interactables/door.tscn" id="4_ndasd"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ur0cb"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qu0ax"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vcl1g"]
+
+[node name="Node2D" type="Node2D" unique_id=655592641]
+script = ExtResource("1_d40ju")
+
+[node name="Player" parent="." unique_id=1143661213 instance=ExtResource("2_i5ca1")]
+position = Vector2(554.055, -9)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1836376116]
+offset = Vector2(0, -150)
+limit_left = -1524
+limit_right = 1524
+limit_smoothed = true
+
+[node name="background" type="Sprite2D" parent="." unique_id=1950801277]
+position = Vector2(0, -161)
+texture = ExtResource("3_ys6uq")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background" unique_id=1114955149]
+
+[node name="floor" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=829898665]
+position = Vector2(0, 158)
+shape = SubResource("WorldBoundaryShape2D_ur0cb")
+
+[node name="left_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=1481347751]
+position = Vector2(-1524, 0)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_qu0ax")
+
+[node name="right_wall" type="CollisionShape2D" parent="background/StaticBody2D" unique_id=945666978]
+position = Vector2(1524, 0)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_vcl1g")
+
+[node name="corridor_to_living_room_door" parent="." unique_id=595128424 instance=ExtResource("4_ndasd")]
+position = Vector2(1451, -103.00001)
+scale = Vector2(1, 1.013)
+next_scene = &"uid://bjxmf7uj7vlll"
+door_scene = "corridor"
+
+[node name="living_room_spawnpoint" type="Marker2D" parent="." unique_id=482185387]
+position = Vector2(1561, -5)
+gizmo_extents = 66.3
+
+[node name="kid_bedroom_spawnpoint" type="Marker2D" parent="." unique_id=1374891012]
+position = Vector2(-689, -2)
+gizmo_extents = 66.3
+
+[node name="parent_bedroom_spawnpoint" type="Marker2D" parent="." unique_id=1255853754]
+position = Vector2(31, 3)
+gizmo_extents = 66.3
+
+[node name="bathroom_spawnpoint" type="Marker2D" parent="." unique_id=878019119]
+position = Vector2(-1361.9999, -4)
+gizmo_extents = 66.3
+
+[node name="office_spawnpoint" type="Marker2D" parent="." unique_id=1028393210]
+position = Vector2(525, -3)
+gizmo_extents = 66.3
+
+[node name="corridor_to_bathroom_door" parent="." unique_id=2075501898 instance=ExtResource("4_ndasd")]
+position = Vector2(-1450, -102)
+scale = Vector2(1, 1.013)
+next_scene = &"uid://bro61l20yxkxb"
+door_scene = "corridor"
+
+[node name="kitchen_spawnpoint" type="Marker2D" parent="." unique_id=2006723567]
+position = Vector2(1033, -3)
+scale = Vector2(6.185, 6.185)
+
+[node name="corridor_to_kid_bedroom_door" parent="." unique_id=1601707116 instance=ExtResource("4_ndasd")]
+position = Vector2(-789, -102)
+next_scene = &"uid://br0fflyrq1me5"
+door_scene = "corridor"
+
+[node name="corridor_to_parent_bedroom_door" parent="." unique_id=1955474297 instance=ExtResource("4_ndasd")]
+position = Vector2(-70, -102)
+next_scene = &"uid://srsntph3xjme"
+door_scene = "corridor"
+
+[node name="corridor_to_office_door" parent="." unique_id=1456493788 instance=ExtResource("4_ndasd")]
+position = Vector2(426, -104)
+scale = Vector2(1, 1.013)
+next_scene = &"uid://b25sojqwa4a8m"
+door_scene = "corridor"
+
+[node name="corridor_to_kitchen_door" parent="." unique_id=1771673714 instance=ExtResource("4_ndasd")]
+position = Vector2(939, -104)
+next_scene = &"uid://cw2abse4cqdmh"
+door_scene = "corridor"

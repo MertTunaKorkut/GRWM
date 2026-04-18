@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn75ctcdf1x86"
-path="res://.godot/imported/scaleup_livingroom_background.png-c7bc0526c67f744a0b32cf65724dc660.ctex"
+uid="uid://bytj7abaoawa6"
+path="res://.godot/imported/scaleup_office.png-8b6646af9095541a3b4478e15115573d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Scaleup versions/scaleup_livingroom_background.png"
-dest_files=["res://.godot/imported/scaleup_livingroom_background.png-c7bc0526c67f744a0b32cf65724dc660.ctex"]
+source_file="res://Assets/Sprites/Scaleup versions/Tilesets/scaleup_office.png"
+dest_files=["res://.godot/imported/scaleup_office.png-8b6646af9095541a3b4478e15115573d.ctex"]
 
 [params]
 
